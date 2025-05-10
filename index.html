@@ -1,0 +1,11 @@
+NOT(REGEX(Phone__c, "^[0-9]{10}$"))
+
+DOB__c > TODAY()
+
+Registration_Date__c > TODAY()
+
+
+Appointment_Date__c < NOW()
+
+ISBLANK(Reason__c)
+
